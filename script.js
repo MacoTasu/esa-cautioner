@@ -23,7 +23,7 @@ function getNMonthDate(date, n) {
 function checkCaution() {
   var revisionList = getRevisionList();
   if (revisionList != null) {
-    var oneYearsDate = getNMonthDate(new Date(), 6);
+    var oneYearsDate = getNMonthDate(new Date(), 7);
     var lastUpdateDate = getLastUpdateDate(revisionList);
     if (oneYearsDate.getTime() > lastUpdateDate.getTime()) {
       showCaution();
